@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe Exchange — FindIt</title>
     <link rel="stylesheet" href="css/style.css">
+<script>
+     // Prevent access to Safe Exchange without sign-in
+     const currentUser = JSON.parse(localStorage.getItem('findit_current_user'));
+     if (!currentUser) {
+         // Redirect to home page if not logged in
+         window.location.href = 'index.html';
+     }
+     </script>
 </head>
 <body>
     <nav class="navbar">
@@ -95,6 +103,7 @@
                 <a href="report.html">Report</a>
                 <a href="dashboard.html">Dashboard</a>
                 <a href="safe-exchange.html">Safe Exchange</a>
+                <a href="https://abidhasan27.me" target="_blank" class="author-link">About the Author</a>
             </div>
         </div>
         <div class="footer-bottom"><p>© 2026 FindIt. All rights reserved.</p></div>

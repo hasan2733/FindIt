@@ -65,7 +65,7 @@ function loadItemDetails(itemId) {
         <div class="details-layout">
             <div class="item-detail-card">
                 <div class="item-detail-visual">
-                    <span class="item-icon-large">${icon}</span>
+                    ${item.photo ? `<img src="${item.photo}" alt="${item.itemName}" class="detail-photo" style="width:100%;height:200px;object-fit:cover;border-radius:8px;">` : `<span class="item-icon-large">${icon}</span>`}
                     <span>${item.category}</span>
                 </div>
                 <div class="item-detail-info">

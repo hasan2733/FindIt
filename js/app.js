@@ -44,6 +44,7 @@ function createItemCard(item) {
                 <h3>${item.itemName}</h3>
                 <p><strong>Location:</strong> ${item.location}</p>
                 <p><strong>Category:</strong> ${item.category}</p>
+                ${item.photo ? `<img src="${item.photo}" alt="${item.itemName}" class="item-card-photo" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-top:8px;">` : ''}
                 ${matchBadge}
             </div>
         </div>
