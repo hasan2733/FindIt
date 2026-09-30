@@ -1,12 +1,24 @@
 # FindIt
 
-FindIt is a front-end based lost and found platform designed for campus or community use. It helps users report lost or found items, browse listings, search matching records, and check a dashboard for item activity. The project is focused on user experience, UI design, and interactive front-end behavior rather than a production backend.
+![Language Composition](https://img.shields.io/badge/JavaScript-46.6%25-f7df1e?style=flat-square)
+![Language Composition](https://img.shields.io/badge/HTML-29%25-e34c26?style=flat-square)
+![Language Composition](https://img.shields.io/badge/CSS-24.4%25-563d7c?style=flat-square)
+
+FindIt is a front-end based lost and found platform designed for campus or community use. It helps users report lost or found items, browse listings, search matching records, and check a dashboard with real-time item status updates and visual assets.
 
 ## Important Note
 
 This project is a frontend-only / web design project. It does not implement any real backend, database, authentication server, or API integration. All data is simulated and stored in the browser using `localStorage`.
 
 So, this repository is best understood as a static web application prototype or UI demo, not a full-stack application.
+
+---
+
+## Recent Updates
+
+- **Enhanced Data Module**: Added comprehensive photo collections for lost and found items in `data.js`
+- **Visual Assets**: Items now include image references for better UI representation
+- **Improved Demo Experience**: More realistic sample data for showcasing features
 
 ---
 
@@ -40,15 +52,17 @@ The app is designed to look like a modern lost-and-found portal and includes mat
 - Filter lost vs found items
 - Search by item name or keyword
 - View item cards with details
+- Visual item images for better browsing
 
 ### 3. Report Page
 - Submit item reports for lost or found items
 - Fill in item name, category, location, color, brand, description, and identifiable features
 - Select item type and contact preference
+- Photo/image support in sample data
 
 ### 4. Item Details Page
 - View complete details of a reported item
-- See item image placeholder or metadata
+- See item images and metadata
 - Check the match score and claim status
 - Claim item if it looks like yours
 
@@ -75,9 +89,9 @@ The app is designed to look like a modern lost-and-found portal and includes mat
 
 This project uses:
 
-- HTML5
-- CSS3
-- JavaScript
+- **HTML5** (29%)
+- **CSS3** (24.4%)
+- **JavaScript** (46.6%)
 - Local browser storage (`localStorage`)
 
 No backend stack such as:
@@ -102,7 +116,7 @@ FindIt/
 ├── js/
 │   ├── app.js
 │   ├── dashboard.js
-│   ├── data.js
+│   ├── data.js                (Enhanced with item photos)
 │   ├── details.js
 │   ├── explore.js
 │   ├── index.js
@@ -125,7 +139,7 @@ FindIt/
 This project is built as a static website. When you open the app in a browser:
 
 1. The HTML files load the required CSS and JavaScript.
-2. JavaScript initializes sample data.
+2. JavaScript initializes sample data (including item photos/images).
 3. The app reads/writes data from `localStorage`.
 4. The user can browse, report, and explore items without any server.
 
@@ -161,7 +175,7 @@ http://localhost:8000
 The app uses browser storage for demo purposes:
 
 - Users are stored in `localStorage`
-- Items are stored in `localStorage`
+- Items (with associated images) are stored in `localStorage`
 - Claims and safe exchange records are stored in `localStorage`
 
 This means:
@@ -205,6 +219,7 @@ If this project is developed further, the next steps could be:
 - Build admin moderation features
 - Add email/SMS notifications
 - Deploy frontend and backend separately
+- Implement real photo storage (AWS S3, Cloudinary, etc.)
 
 ---
 
@@ -222,7 +237,7 @@ This project fits well for:
 
 ## Conclusion
 
-FindIt is a frontend-focused web project designed to represent a modern lost-and-found platform. It demonstrates the full UI flow and interaction patterns, but it is not a complete backend-powered application.
+FindIt is a frontend-focused web project designed to represent a modern lost-and-found platform. It demonstrates the full UI flow and interaction patterns, but it is not a complete backend-powered solution.
 
 It is a static, client-side website with simulated data and browser-based storage, making it ideal for UI demo, concept validation, and front-end development practice.
 
@@ -230,6 +245,6 @@ It is a static, client-side website with simulated data and browser-based storag
 
 ## Author / Project Intent
 
-This repository is primarily a design and front-end development project. The goal is to build a clean, realistic interface for a lost and found application while keeping the project lightweight and easy to run locally.
+This repository is primarily a design and front-end development project. The goal is to build a clean, realistic interface for a lost and found application while keeping the project lightweight and easy to understand.
 
 If you want, this project can later be upgraded into a full-stack web application with authentication, database support, and real item management.
