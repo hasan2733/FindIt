@@ -252,5 +252,6 @@ This repository is primarily a design and front-end development project. The goa
 If you want, this project can later be upgraded into a full-stack web application with authentication, database support, and real item management.
 
 ## Author
-## Abid Hasan
-## SEU CSE
+Abid Hasan
+SEU CSE
+Portfolio : abidhasan27.me
