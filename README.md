@@ -113,10 +113,12 @@ has been implemented in this repository.
 FindIt/
 ├── css/
 │   └── style.css
+├── images/
+│   └── some demo images of items
 ├── js/
 │   ├── app.js
 │   ├── dashboard.js
-│   ├── data.js                (Enhanced with item photos)
+│   ├── data.js               
 │   ├── details.js
 │   ├── explore.js
 │   ├── index.js
@@ -243,8 +245,12 @@ It is a static, client-side website with simulated data and browser-based storag
 
 ---
 
-## Author / Project Intent
+## Project Intent
 
 This repository is primarily a design and front-end development project. The goal is to build a clean, realistic interface for a lost and found application while keeping the project lightweight and easy to understand.
 
 If you want, this project can later be upgraded into a full-stack web application with authentication, database support, and real item management.
+
+## Author
+## Abid Hasan
+## SEU CSE
