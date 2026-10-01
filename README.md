@@ -4,17 +4,38 @@
 ![HTML](https://img.shields.io/badge/HTML-28.4%25-e34c26?style=for-the-badge)
 ![CSS](https://img.shields.io/badge/CSS-22.5%25-563d7c?style=for-the-badge)
 
-FindIt is a front-end prototype for a campus and community lost-and-found platform. The app allows users to report lost or found items, explore listings, search for matches, review item details, and use a dashboard to manage the flow in a clean, user-friendly interface.
+FindIt is a front-end prototype for a campus and community lost-and-found platform. The app allows users to report lost or found items, explore listings, search for matches, review item details, and coordinate safe exchanges.
+
+## Live Demo
+
+🚀 **[Try FindIt Live](https://findit-lost-n-found.vercel.app/)**
 
 ## Overview
 
-This repository is designed as a static web application UI demo. It focuses on the product experience and client-side interactions rather than a real backend system. It is ideal for showcasing a lost-and-found workflow, prototyping user journeys, and demonstrating front-end development skills.
+This repository is designed as a static web application UI demo. It focuses on the product experience and client-side interactions rather than a real backend system. It is ideal for showcasing a lost-and-found product flow or prototyping user interactions.
 
 ## Important Note
 
 This project is a frontend-only web app. It does not include a real backend, database, authentication system, or API integration. All content is simulated and stored in the browser using `localStorage`.
 
 Because of this, the project should be treated as a UI prototype or concept demo, not a production-ready full-stack application.
+
+---
+
+## Demo Login Credentials
+
+You can test the app using any of these demo accounts:
+
+| Email | Password | Name |
+|-------|----------|------|
+| john@campus.edu | password | John Doe |
+| jane@campus.edu | password | Jane Smith |
+| ali@campus.edu | password | Ali Khan |
+| sara@campus.edu | password | Sara Lee |
+| sarah@campus.edu | password | Sarah Khan |
+| olivia@campus.edu | password | Olivia Smith |
+
+All demo accounts use the password: **`password`**
 
 ---
 
