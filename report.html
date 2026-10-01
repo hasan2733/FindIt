@@ -88,7 +88,40 @@
                     </div>
                     <div class="form-group">
                         <label for="time">Approximate Time</label>
-                        <input type="time" id="time">
+                        <div class="time-picker-wrapper">
+                            <div class="circular-clock" id="circularClock" role="button" tabindex="0" aria-label="Click to set time or drag to fine-tune">
+                                <svg class="clock-svg" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="100" cy="100" r="95" class="clock-border" />
+                                    <circle cx="100" cy="100" r="90" class="clock-face" />
+                                    <g id="clockTicks" aria-hidden="true"></g>
+                                    <g class="clock-numbers" aria-hidden="true">
+                                        <text x="100" y="39" class="clock-number">12</text>
+                                        <text x="130.5" y="47.2" class="clock-number">1</text>
+                                        <text x="152.8" y="69.5" class="clock-number">2</text>
+                                        <text x="161" y="100" class="clock-number">3</text>
+                                        <text x="152.8" y="130.5" class="clock-number">4</text>
+                                        <text x="130.5" y="152.8" class="clock-number">5</text>
+                                        <text x="100" y="161" class="clock-number">6</text>
+                                        <text x="69.5" y="152.8" class="clock-number">7</text>
+                                        <text x="47.2" y="130.5" class="clock-number">8</text>
+                                        <text x="39" y="100" class="clock-number">9</text>
+                                        <text x="47.2" y="69.5" class="clock-number">10</text>
+                                        <text x="69.5" y="47.2" class="clock-number">11</text>
+                                    </g>
+                                    <!-- Hour hand -->
+                                    <line id="clockHourHand" x1="100" y1="100" x2="100" y2="45" class="clock-hand hour" />
+                                    <!-- Minute hand -->
+                                    <line id="clockMinuteHand" x1="100" y1="100" x2="100" y2="25" class="clock-hand minute" />
+                                    <!-- Center dot -->
+                                    <circle cx="100" cy="100" r="6" class="clock-center-dot" />
+                                </svg>
+                                <input type="hidden" id="time">
+                                <div class="clock-digital" id="clockDigital">--:--</div>
+                            </div>
+                            <label class="clock-time-label" for="timeEntry">Or enter an exact time</label>
+                            <input class="clock-time-entry" id="timeEntry" type="text" inputmode="text" autocomplete="off" placeholder="9:41 AM" aria-describedby="timeEntryHint">
+                            <p class="clock-hint" id="timeEntryHint">Click or drag the clock to set a time, or type a time such as 9:41 AM.</p>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="color">Color</label>
